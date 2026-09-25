@@ -29,7 +29,7 @@ export default function App() {
     const [alert, setAlert] = useState({ text: '', type: '', key: 0 });
 
     const CLIENT_ID = "1552770073121394810";
-    const REDIRECT_URI = "http://localhost:5174/";
+    const REDIRECT_URI = "https://dtell.netlify.app/";
     const MY_ADMIN_ID = "755178727352172566";
 
     useEffect(() => {
