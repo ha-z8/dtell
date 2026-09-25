@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@theme {
+  --color-discord-main: #5865F2;
+  --color-discord-hover: #4752C4;
+  --color-discord-dark: #313338;
+  
+  --color-dark-bg: #030712;
+  --color-dark-card: #0b0f19;
+  --color-dark-input: #111827;
+  --color-dark-border: #1f293d;
+}
+
+body {
+  background-color: var(--color-dark-bg);
+  color: #f9fafb;
+  font-family: 'Tajawal', sans-serif;
+  min-height: 100vh;
+}
