@@ -346,7 +346,7 @@ export default function App() {
 
                 const webhookUsername = !formData.isAnonymous ? user.global_name : botName;
                 const webhookAvatar = !formData.isAnonymous ? user.avatar : botAvatar;
-                const dtellLogoUrl = "https://raw.githubusercontent.com/ha-z8/ZP-web/main/src/assets/11.png";
+                const dtellLogoUrl = "https://raw.githubusercontent.com/ha-z8/dtell/refs/heads/main/src/assets/11.png";
 
                 const embed = {
                     title: formData.title || undefined,

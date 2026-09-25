@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { supabase } from '../supabaseClient';
-import logoFullAr from '../assets/1.png';
+import logoIcon from '../assets/1.png';
 
 export default function Footer({ navigateRoute }) {
     const [policies, setPolicies] = useState([]);
@@ -16,8 +16,12 @@ export default function Footer({ navigateRoute }) {
 
     return (
         <footer className="w-full bg-dark-card border border-dark-border px-6 py-4 rounded-3xl shadow-xl mt-6 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-400 font-sans">
-            <div className="flex items-center gap-4 cursor-pointer" onClick={() => navigateRoute('home')}>
-                <img src={logoFullAr} alt="dtell" className="h-8 object-contain" />
+            
+            {/* الشعار مطابق للهيدر تماماً */}
+            <div className="flex items-center cursor-pointer group" onClick={() => navigateRoute('home')}>
+                <div className="w-10 h-10 bg-dark-input border border-indigo-500/40 rounded-2xl flex items-center justify-center p-2 shadow-inner group-hover:border-indigo-500 transition">
+                    <img src={logoIcon} alt="Logo" className="w-full h-full object-contain" />
+                </div>
             </div>
 
             <div className="flex flex-wrap items-center gap-5">
